@@ -11,31 +11,45 @@ Faite un fork de ce repository git et codez votre projet dans le dossier *app*.
 
 1. Ecrire la requête SQL qui permet de récupérer tout les produits de la carte.
 ```sql
-# Ecrivez la requête ici ...
+SELECT * FROM product
 
 ```
 
 2. Ecrire la requête SQL qui permet d'ajouter un produit au panier de l'utilisateur.
 ```sql
-# Ecrivez la requête ici ...
+
+INSERT INTO productCart (quantity, productId, cartId) VALUES (
+1,
+2,
+1
+);
 
 ```
 
 3. Ecrire la requête SQL qui permet de valider une commande pour qu'elle parte en salle.
 ```sql
-# Ecrivez la requête ici ...
+
+UPDATE `order` SET `validation` = 1;
 
 ```
 
 4. Un nouveau burger est arrivé : le DoubleBigMassi. Ecrivez la requête SQL qui permet d'ajouter ce magnifique *burger* à la carte.
 ```sql
-# Ecrivez la requête ici ...
+
+INSERT INTO product(name, description, price, categoryId) VALUES (
+"Double Big Massi",
+"Unique et généreux",
+14.99,
+1
+);
 
 ```
 
 5. Ecrire la requête SQL qui permet de récupérer tout les produits d'une commande en fonction de l'id d'un utilisateur.
 ```sql
-# Ecrivez la requête ici ...
+
+
+
 
 ```
 
